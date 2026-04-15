@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-salon",
+      "description": "A stylish and modern salon interior with comfortable chairs and elegant decor.",
+      "imageUrl": "https://picsum.photos/seed/101/1920/1080",
+      "imageHint": "salon interior"
+    },
+    {
+      "id": "gallery-interior",
+      "description": "A bright and welcoming reception area of the beauty salon.",
+      "imageUrl": "https://picsum.photos/seed/102/600/400",
+      "imageHint": "salon reception"
+    },
+    {
+      "id": "gallery-haircut",
+      "description": "A person with a fresh, stylish haircut smiling.",
+      "imageUrl": "https://picsum.photos/seed/103/600/400",
+      "imageHint": "stylish haircut"
+    },
+    {
+      "id": "gallery-manicure",
+      "description": "Close-up of a professional manicure with a beautiful nail color.",
+      "imageUrl": "https://picsum.photos/seed/104/600/400",
+      "imageHint": "manicure nails"
+    },
+    {
+      "id": "gallery-skincare",
+      "description": "A person relaxing during a facial skincare treatment.",
+      "imageUrl": "https://picsum.photos/seed/105/600/400",
+      "imageHint": "facial treatment"
+    },
+    {
+      "id": "gallery-before-after",
+      "description": "A before and after comparison of a hair transformation.",
+      "imageUrl": "https://picsum.photos/seed/106/600/400",
+      "imageHint": "hair transformation"
+    }
+  ]
 }
