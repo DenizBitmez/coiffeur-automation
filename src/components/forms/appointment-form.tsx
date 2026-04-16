@@ -74,7 +74,15 @@ export function AppointmentForm() {
           title: "Randevu Talebiniz Alındı!",
           description: "Onay e-postası için gelen kutunuzu kontrol edin.",
         });
-        form.reset();
+        form.reset({
+          name: "",
+          phone: "",
+          email: "",
+          service: "",
+          time: "",
+          // @ts-ignore - Seçimi tamamen kaldırmak için undefined veriyoruz
+          date: undefined,
+        });
       } else {
         throw new Error(result.message);
       }

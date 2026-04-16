@@ -13,7 +13,7 @@ const appointmentSchema = z.object({
 });
 
 // This is a placeholder. Replace with your actual n8n webhook URL.
-const N8N_WEBHOOK_URL = "https://your-n8n-instance.com/webhook-test/your-id";
+const N8N_WEBHOOK_URL = "https://den566582123545.app.n8n.cloud/webhook/randevu-al";
 
 export async function handleAppointmentRequest(data: unknown) {
   const parsedData = appointmentSchema.safeParse(data);
@@ -37,11 +37,11 @@ export async function handleAppointmentRequest(data: unknown) {
     // In a real application, you would not want to use a placeholder URL.
     // This should be stored in environment variables.
     if (N8N_WEBHOOK_URL.includes("your-n8n-instance.com")) {
-        console.log("Using placeholder webhook. Data not sent.", payload);
-        // Simulate a successful API call for demonstration purposes.
-        return { success: true, message: "Randevu talebi başarıyla alındı (simülasyon)." };
+      console.log("Using placeholder webhook. Data not sent.", payload);
+      // Simulate a successful API call for demonstration purposes.
+      return { success: true, message: "Randevu talebi başarıyla alındı (simülasyon)." };
     }
-      
+
     const response = await fetch(N8N_WEBHOOK_URL, {
       method: "POST",
       headers: {
