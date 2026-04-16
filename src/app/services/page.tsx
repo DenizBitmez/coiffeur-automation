@@ -1,6 +1,7 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { services } from '@/lib/services';
 import { Clock } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ServicesPage() {
   return (
@@ -17,21 +18,23 @@ export default function ServicesPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service) => (
-          <Card key={service.name} className="flex flex-col border-primary/20 hover:shadow-xl transition-shadow duration-300">
-            <CardHeader>
-              <CardTitle className="font-headline text-2xl">{service.name}</CardTitle>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <p className="text-foreground/80">{service.description}</p>
-            </CardContent>
-            <CardFooter className="flex justify-between items-center text-sm font-medium mt-4">
-              <div className="flex items-center gap-2 text-primary">
-                <Clock className="h-4 w-4" />
-                <span>{service.duration}</span>
-              </div>
-              <span className="font-bold text-lg">{service.price}</span>
-            </CardFooter>
-          </Card>
+          <Link key={service.slug} href={`/services/${service.slug}`} className="group">
+            <Card className="flex flex-col h-full border-primary/20 hover:border-primary/50 hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 cursor-pointer">
+              <CardHeader>
+                <CardTitle className="font-headline text-2xl group-hover:text-primary transition-colors">{service.name}</CardTitle>
+              </CardHeader>
+              <CardContent className="flex-grow">
+                <p className="text-foreground/80">{service.description}</p>
+              </CardContent>
+              <CardFooter className="flex justify-between items-center text-sm font-medium mt-4">
+                <div className="flex items-center gap-2 text-primary">
+                  <Clock className="h-4 w-4" />
+                  <span>{service.duration}</span>
+                </div>
+                <span className="font-bold text-lg">{service.price}</span>
+              </CardFooter>
+            </Card>
+          </Link>
         ))}
       </div>
     </div>

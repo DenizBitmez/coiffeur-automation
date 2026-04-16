@@ -2,39 +2,45 @@
   "placeholderImages": [
     {
       "id": "hero-salon",
-      "description": "A stylish and modern salon interior with comfortable chairs and elegant decor.",
-      "imageUrl": "https://picsum.photos/seed/101/1920/1080",
+      "description": "Modern ve konforlu salon iç mekanımız",
+      "imageUrl": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=1920",
       "imageHint": "salon interior"
     },
     {
       "id": "gallery-interior",
-      "description": "A bright and welcoming reception area of the beauty salon.",
-      "imageUrl": "https://picsum.photos/seed/102/600/400",
+      "description": "Premium salon atmosferimiz",
+      "imageUrl": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&q=80&w=800",
       "imageHint": "salon reception"
     },
     {
       "id": "gallery-haircut",
-      "description": "A person with a fresh, stylish haircut smiling.",
-      "imageUrl": "https://picsum.photos/seed/103/600/400",
+      "description": "Profesyonel kesim ve tasarım",
+      "imageUrl": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800",
       "imageHint": "stylish haircut"
     },
     {
       "id": "gallery-manicure",
-      "description": "Close-up of a professional manicure with a beautiful nail color.",
-      "imageUrl": "https://picsum.photos/seed/104/600/400",
+      "description": "Estetik tırnak sanatı ve bakımı",
+      "imageUrl": "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80&w=800",
       "imageHint": "manicure nails"
     },
     {
       "id": "gallery-skincare",
-      "description": "A person relaxing during a facial skincare treatment.",
-      "imageUrl": "https://picsum.photos/seed/105/600/400",
+      "description": "Gelişmiş cilt bakım uygulamaları",
+      "imageUrl": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=800",
       "imageHint": "facial treatment"
     },
     {
-      "id": "gallery-before-after",
-      "description": "A before and after comparison of a hair transformation.",
-      "imageUrl": "https://picsum.photos/seed/106/600/400",
-      "imageHint": "hair transformation"
+      "id": "gallery-makeup",
+      "description": "Dünyaca ünlü markalarla porselen makyaj",
+      "imageUrl": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&q=80&w=800",
+      "imageHint": "makeup brushes"
+    },
+    {
+      "id": "gallery-style",
+      "description": "Pırıltılı renkler ve yaratıcı dokunuşlar",
+      "imageUrl": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800",
+      "imageHint": "hair coloring"
     }
   ]
 }

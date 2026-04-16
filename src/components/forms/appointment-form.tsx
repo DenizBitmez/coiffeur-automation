@@ -52,7 +52,7 @@ const availableTimes = [
   "14:00", "15:00", "16:00", "17:00", "18:00"
 ];
 
-export function AppointmentForm() {
+export function AppointmentForm({ defaultService }: { defaultService?: string } = {}) {
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
@@ -62,6 +62,7 @@ export function AppointmentForm() {
       name: "",
       phone: "",
       email: "",
+      service: defaultService || "",
     },
   });
 
