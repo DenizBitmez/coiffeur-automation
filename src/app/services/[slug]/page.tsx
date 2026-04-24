@@ -48,12 +48,12 @@ export default async function ServiceDetailPage({
             </div>
 
             <div className="pt-6">
-              <Link href={`/appointment?service=${service.slug}`}>
-                <Button size="lg" className="h-14 px-8 text-lg w-full md:w-auto shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 bg-accent hover:bg-accent/90 text-accent-foreground">
+              <Button asChild size="lg" className="h-14 px-8 text-lg w-full md:w-auto shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 bg-accent hover:bg-accent/90 text-accent-foreground">
+                <Link href={`/appointment?service=${service.slug}`}>
                   Hemen Randevu Al
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
           </div>
 
