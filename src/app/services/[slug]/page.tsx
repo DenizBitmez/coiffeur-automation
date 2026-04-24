@@ -4,6 +4,12 @@ import { Clock, ChevronLeft, CheckCircle2, Sparkles, ArrowRight } from "lucide-r
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
+export function generateStaticParams() {
+  return services.map((service) => ({
+    slug: service.slug,
+  }));
+}
+
 export default async function ServiceDetailPage({
   params,
 }: {
